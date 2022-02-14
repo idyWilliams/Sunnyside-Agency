@@ -107,8 +107,110 @@ header h1{
     font-family: "Fraunces";
     padding-bottom: 20px; 
 }
+.head h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+ .Client{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+.Client .display1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.Client .display2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.Client .display3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.Client .display1 img{
+    border-radius: 50%;
+    max-width: 50px;
+    padding-top: 10px;
+}    
+.Client .display2 img{
+    border-radius: 50%;
+    max-width: 50px;
+    padding-top: 10px;
+}   
+.Client .display3 img{
+    border-radius: 50%;
+    max-width: 50px;
+    padding-top: 10px;
+}
+.Client .display1 .quotes{
+    text-align: center;
+    padding: 20px 20%;
+}
+.Client .display2 .quotes{
+    text-align: center;
+    padding: 20px 20%;
+}
+.Client .display3 .quotes{
+    text-align: center;
+    padding: 20px 20%;
+}
+.Client .display1 h2{
+    font-family: "Fraunces";
+}
+.Client .display h2{
+    font-family: "Fraunces";
+}
+.Client .display1 h2{
+    font-family: "Fraunces";
+}
+.one img, .two img , .three img , .four img{
+    width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-areas: "one two"
+                        "three four";
+}
+.flex{
+   display: block;  
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:hsla(168, 34%, 41%, 0.555) ;
+    background-size: cover;
+}
+.footer ul {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    gap: 10px;
+}
+.footer ul li a{
+    text-decoration: none;
+}
+.social{
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
 
-@media screen and (min-width: 768px) {
+@media screen and  (min-width: 768px) {
     header{
         background-image: url("../images/desktop/image-header.jpg");
         height: 80vh;
@@ -148,6 +250,132 @@ header h1{
     .photography{
         background-image: url("../images/desktop/image-photography.jpg");
     }
+    .head h2{
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        font-size: 20px;
+        
+    }
+    .Client {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10%; */
+    } 
+    .Client div{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-between; */
+    align-items: center;
+    gap: 10px;
+    /* padding-left: 20px; */
+    margin: 50px 2%;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    }
+    .Client .display1{
+        margin-left: 5%;
+    }
+    .Client .display3{
+        margin-right: 5%;
+    }
+    .Client .display1 img{
+        border-radius: 50%;
+        max-width: 50px;
+    }
+    .Client .display2 img{
+        border-radius: 50%;
+        max-width: 50px;
+    }
+    .Client .display3 img{
+        border-radius: 50%;
+        max-width: 50px;
+    }
+    .Client .display1 .quotes{
+        text-align: center;
+        padding-top: 20px ;
+        /* font-family: "Barlow"; */
+        font-size: 18px;
+        /* font-weight:500; */
+        line-height: 1.5;
+    }
+    .Client .display2 .quotes{
+        text-align: center;
+        padding-top: 20px ;
+        /* font-family: "Barlow"; */
+        font-size: 18px;
+        /* font-weight:500; */
+        line-height: 1.5;
+    }
+    .Client .display3 .quotes{
+        text-align: center;
+        padding-top: 20px ;
+        /* font-family: "Barlow"; */
+        font-size: 18px;
+        /* font-weight:500; */
+        line-height: 1.5;
+    }
+    .Client .display1 h2{
+        font-family: "Fraunces";
+        font-style:normal;
+        /* font-weight: bolder; */
+        margin-top: 10px;
+    }
+    .Client .display2 h2{
+        font-family: "Fraunces";
+        font-style:normal;
+        font-weight: bolder;
+        margin-top: 10px;
+    }
+    .Client .display3 h2{
+        font-family: "Fraunces";
+        font-style:normal;
+        font-weight: bolder;
+        margin-top: 10px;
+    }
+    .Client .display1 p{
+        /* font-size: small; */
+        margin-bottom: 20px;
+    }
+    .Client .display2 p{
+        /* font-size: small; */
+        margin-bottom: 20px;
+    }
+    .Client .display3 p{
+        /* font-size: small; */
+        margin-bottom: 20px;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 30px;
+    }
+    .footer h2{
+        /* margin-left: 10px; */
+
+    }
+    .footer ul {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        text-decoration: none;
+        
+    }
+    .footer .social{
+        display: flex;
+        gap: 10px;
+        text-decoration: none;
+    }
+    .footer li a{
+        /* text-decoration: none; */
+        list-style: none;
+    }
+
+    .grid{
+       display: flex !important;
+    }    
 }
-
-
